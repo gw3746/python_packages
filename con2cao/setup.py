@@ -11,7 +11,12 @@ setup(
     author_email='bertsu@fuxipc.com',
     url='https://github.com/gw3746/python_packages/con2cao',
     install_requires=[
-        # Any dependencies, e.g., 'requests', 'pandas', etc.
+        'pyodbc',
+        'time',
+        'mysql.connector-python',
+        'datetime',
+        'logging',
+        'os',
     ],
     classifiers=[
         'Programming Language :: Python :: 3',

@@ -1,0 +1,6 @@
+pyodbc
+time
+mysql.connector-python
+datetime
+logging
+os
