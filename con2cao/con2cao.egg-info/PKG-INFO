@@ -10,8 +10,5 @@ Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
 Description-Content-Type: text/markdown
 Requires-Dist: pyodbc
-Requires-Dist: time
 Requires-Dist: mysql.connector-python
 Requires-Dist: datetime
-Requires-Dist: logging
-Requires-Dist: os
