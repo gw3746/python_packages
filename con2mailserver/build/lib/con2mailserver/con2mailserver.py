@@ -4,12 +4,12 @@ from email import message_from_bytes
 from email.header import decode_header
 from email.utils import parsedate_to_datetime,parseaddr
 
-def gmailserver_str():
+def con2gmailserver():
     gmail_server = 'imap.gmail.com'
     gmail_user = 'cing5417@gmail.com'
     gmail_password = 'xdus pmxb gpkv zbtb'
     return[ gmail_server, gmail_user, gmail_password]
-def hinetserver_str():
+def con2hinetserver():
     hinethinet_server = 'msa.hinet.net'
     hinet_user = 'fuxi.su'
     hinet_password = '!Tzj012589'
@@ -19,16 +19,7 @@ def con2mailserver(server, user, password):
     with IMAPClient(server) as client:
         client.login(user, password)
         return client
-def con2gmailserver():
-    gmail_server,gmail_user,gmail_password = gmailserver_str()
-    with IMAPClient(gmail_server) as client:
-        client.login(gmail_user, gmail_password)
-        return client
-def con2hinetserver():
-    hinet_server,hinet_user,hinet_password = hinetserver_str()
-    with IMAPClient(hinet_server) as client:
-        client.login(hinet_user, hinet_password)
-        return client    
+    
 def test_conect_test():
     # Test with Gmail server
     gmail_server, gmail_user, gmail_password = con2gmailserver()

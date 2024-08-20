@@ -11,10 +11,8 @@ setup(
     author_email='bertsu@fuxipc.com',
     url='https://github.com/gw3746/python_packages/con2mailserver',
     install_requires=[
-        'pyodbc',
-        
-        'mysql.connector-python',
-        'datetime',
+        'imapclient',        
+              
         
     ],
     classifiers=[
@@ -22,4 +20,5 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Operating System :: OS Independent',
     ],
+    python_requires='>=3.6',
 )

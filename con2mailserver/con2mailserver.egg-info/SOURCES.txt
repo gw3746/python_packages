@@ -1,0 +1,8 @@
+setup.py
+con2mailserver/__init__.py
+con2mailserver/con2mailserver.py
+con2mailserver.egg-info/PKG-INFO
+con2mailserver.egg-info/SOURCES.txt
+con2mailserver.egg-info/dependency_links.txt
+con2mailserver.egg-info/requires.txt
+con2mailserver.egg-info/top_level.txt
