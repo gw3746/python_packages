@@ -31,7 +31,7 @@ def con2hinetserver():
         return client    
 def test_conect_test():
     # Test with Gmail server
-    gmail_server, gmail_user, gmail_password = con2gmailserver()
+    gmail_server, gmail_user, gmail_password = gmailserver_str()
     try:
         client = con2mailserver(gmail_server, gmail_user, gmail_password)
         print("Gmail connection successful")
@@ -40,7 +40,7 @@ def test_conect_test():
         print(f"Gmail connection failed: {e}")
 
     # Test with Hinet server
-    hinet_server, hinet_user, hinet_password = con2hinetserver()
+    hinet_server, hinet_user, hinet_password = hinetserver_str()
     try:
         client = con2mailserver(hinet_server, hinet_user, hinet_password)
         print("Hinet connection successful")
