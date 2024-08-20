@@ -20,15 +20,16 @@ def con2mailserver(server, user, password):
         client.login(user, password)
         return client
 def con2gmailserver():
-    gmail_server,gmail_user,gmail_password = gmailserver_str()
-    with IMAPClient(gmail_server) as client:
-        client.login(gmail_user, gmail_password)
-        return client
+    
+    gmail_server, gmail_user, gmail_password = gmailserver_str()
+    client = IMAPClient(gmail_server)
+    client.login(gmail_user, gmail_password)
+    return client
 def con2hinetserver():
     hinet_server,hinet_user,hinet_password = hinetserver_str()
-    with IMAPClient(hinet_server) as client:
-        client.login(hinet_user, hinet_password)
-        return client    
+    client=IMAPClient(hinet_server)   
+    client.login(hinet_user, hinet_password)
+    return client    
 def test_conect_test():
     # Test with Gmail server
     gmail_server, gmail_user, gmail_password = gmailserver_str()
