@@ -23,7 +23,7 @@ def con2gmailserver():
     
     gmail_server, gmail_user, gmail_password = gmailserver_str()
     client = IMAPClient(gmail_server)
-    client.login(gmail_user, gmail_password)
+    client.login(gmail_user, gmail_password)   
     return client
 def con2hinetserver():
     hinet_server,hinet_user,hinet_password = hinetserver_str()
