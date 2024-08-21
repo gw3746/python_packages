@@ -3,7 +3,7 @@ from imapclient import IMAPClient
 from email import message_from_bytes
 from email.header import decode_header
 from email.utils import parsedate_to_datetime,parseaddr
-
+import ssl
 def gmailserver_str():
     gmail_server = 'imap.gmail.com'
     gmail_user = 'cing5417@gmail.com'
@@ -27,7 +27,9 @@ def con2gmailserver():
     return client
 def con2hinetserver():
     hinet_server,hinet_user,hinet_password = hinetserver_str()
-    client=IMAPClient(hinet_server)   
+    port=993
+    context=ssl.create_default_context()
+    client=IMAPClient(hinet_server,port=port,ssl=True,ssl_context=context)   
     client.login(hinet_user, hinet_password)
     return client    
 def test_conect_test():
