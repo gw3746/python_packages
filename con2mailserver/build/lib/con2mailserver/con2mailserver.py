@@ -28,7 +28,8 @@ def con2gmailserver():
 def con2hinetserver():
     hinet_server,hinet_user,hinet_password = hinetserver_str()
     port=993
-    context=ssl.create_default_context()
+    #context=ssl.create_default_context()
+    context = ssl._create_unverified_context()
     client=IMAPClient(hinet_server,port=port,ssl=True,ssl_context=context)   
     client.login(hinet_user, hinet_password)
     return client    
