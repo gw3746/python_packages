@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: con2mailserver
+Version: 0.1
+Summary: A utility for con2hinet or con2gmail
+Home-page: https://github.com/gw3746/python_packages/con2mailserver
+Author: Robert Su
+Author-email: bertsu@fuxipc.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: imapclient
+
+# con2mailserver
+
+A package to connect to mail servers.
+
+## Installation
+
+```bash
+pip install con2mailserver

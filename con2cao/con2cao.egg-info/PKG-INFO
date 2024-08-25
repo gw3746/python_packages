@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: con2cao
+Version: 0.1
+Summary: A utility for converting PostgreSQL types to MySQL types
+Home-page: https://github.com/gw3746/python_packages/con2cao
+Author: Robert Su
+Author-email: bertsu@fuxipc.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pyodbc
+Requires-Dist: mysql.connector-python
+Requires-Dist: datetime
