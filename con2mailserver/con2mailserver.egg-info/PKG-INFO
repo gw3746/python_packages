@@ -2,11 +2,7 @@ Metadata-Version: 2.1
 Name: con2mailserver
 Version: 0.1
 Summary: A utility for con2hinet or con2gmail
-<<<<<<< HEAD
 Home-page: git@github.com:gw3746/python_packages.git
-=======
-Home-page: https://github.com/gw3746/python_packages/con2mailserver
->>>>>>> origin/main
 Author: Robert Su
 Author-email: bertsu@fuxipc.com
 Classifier: Programming Language :: Python :: 3
