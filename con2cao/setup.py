@@ -9,7 +9,8 @@ setup(
     long_description_content_type='text/markdown',
     author='Robert Su',
     author_email='bertsu@fuxipc.com',
-    url='https://github.com/gw3746/python_packages/con2cao',
+    #url='https://github.com/gw3746/python_packages/con2cao',
+    url='git@github.com:gw3746/python_packages.git',
     install_requires=[
         'pyodbc',
         
