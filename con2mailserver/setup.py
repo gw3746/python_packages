@@ -9,8 +9,12 @@ setup(
     long_description_content_type='text/markdown',
     author='Robert Su',
     author_email='bertsu@fuxipc.com',
+<<<<<<< HEAD
     #url='https://github.com/gw3746/python_packages/con2mailserver',
     url='git@github.com:gw3746/python_packages.git',
+=======
+    url='https://github.com/gw3746/python_packages/con2mailserver',
+>>>>>>> origin/main
     install_requires=[
         'imapclient',        
               

@@ -27,12 +27,27 @@ def con2gmailserver():
     return client
 def con2hinetserver():
     hinet_server,hinet_user,hinet_password = hinetserver_str()
+<<<<<<< HEAD
     port=993
     #context=ssl.create_default_context()
     context = ssl._create_unverified_context()
     client=IMAPClient(hinet_server,port=port,ssl=True,ssl_context=context)   
     client.login(hinet_user, hinet_password)
     return client    
+=======
+    
+    port = 993  # Change to the correct port for IMAPS
+    context = ssl.create_default_context()  # Use the default context for SSL/TLS
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE  # Disable certificate verification (not recommended for production)
+    try:
+        client=IMAPClient(hinet_server,port=port,ssl=True,ssl_context=context)   
+        client.login(hinet_user, hinet_password)
+        print("Hinet connection successful")
+    except Exception as e:
+        print(f"Connection failed: {e}") 
+    return client
+>>>>>>> origin/main
 def test_conect_test():
     # Test with Gmail server
     gmail_server, gmail_user, gmail_password = gmailserver_str()
@@ -45,12 +60,27 @@ def test_conect_test():
 
     # Test with Hinet server
     hinet_server, hinet_user, hinet_password = hinetserver_str()
+<<<<<<< HEAD
     try:
         client = con2mailserver(hinet_server, hinet_user, hinet_password)
         print("Hinet connection successful")
         
     except Exception as e:
         print(f"Hinet connection failed: {e}")
+=======
+    
+    port = 993  # Change to the correct port for IMAPS
+    context = ssl.create_default_context()  # Use the default context for SSL/TLS
+    context.check_hostname = False
+    context.verify_mode = ssl.CERT_NONE  # Disable certificate verification (not recommended for production)
+    try:
+        client=IMAPClient(hinet_server,port=port,ssl=True,ssl_context=context)   
+        client.login(hinet_user, hinet_password)
+        print("Hinet connection successful")
+    except Exception as e:
+        print(f"Connection failed: {e}")
+        
+>>>>>>> origin/main
 
 if __name__ == "__main__":
     test_conect_test()
