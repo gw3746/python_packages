@@ -11,12 +11,3 @@ Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 Requires-Dist: imapclient
-
-# con2mailserver
-
-A package to connect to mail servers.
-
-## Installation
-
-```bash
-pip install con2mailserver

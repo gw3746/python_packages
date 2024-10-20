@@ -5,7 +5,7 @@ setup(
     version='0.1',
     packages=find_packages(),
     description='A utility for con2hinet or con2gmail',
-    long_description=open('README.md').read(),
+    #long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
     author='Robert Su',
     author_email='bertsu@fuxipc.com',
